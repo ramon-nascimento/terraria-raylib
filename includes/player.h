@@ -5,14 +5,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-namespace player {
-    typedef struct Player {
-        Rectangle rect;
-        Vector2 pos;
-    } Player;
+typedef struct Player {
+    Rectangle rect;
+    Vector2 pos;
+} Player;
 
 
-    Player* get_player();
-};
+Player* get_player();
 
 #endif

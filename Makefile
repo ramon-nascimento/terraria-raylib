@@ -6,10 +6,10 @@ SRC_DIR = src
 INCLUDE_DIR = includes
 
 # Busca todos os arquivos .cpp em SRC_DIR
-SRC = main.cpp $(wildcard $(SRC_DIR)/*.cpp)
+SRC = main.c $(wildcard $(SRC_DIR)/*.c)
 
 # Flags do compilador
-CXX = g++
+CXX = gcc
 CXXFLAGS = -I$(INCLUDE_DIR) -Wall -g
 LDFLAGS = -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
 

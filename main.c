@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 int main() {
-    player::Player *player = player::get_player();
+    Player *player = get_player();
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Clone do Terraria");
     SetTargetFPS(60);
@@ -21,7 +21,7 @@ int main() {
 
     CloseWindow();
 
-    delete player;
+    free(player);
 
     return 0;
 }
